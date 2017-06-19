@@ -1,0 +1,6 @@
+framework module Pods_Fundush {
+  umbrella header "Pods-Fundush-umbrella.h"
+
+  export *
+  module * { export * }
+}
