@@ -71,8 +71,13 @@ class EnterVerificationCode: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func btnVerify(_ sender: Any) {
-                        let category = self.storyboard?.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
-                        self.navigationController?.pushViewController(category, animated: true)
+    @IBAction func btnVerify(_ sender: Any)
+    {
+        let tabBarController:UITabBarController = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
+        let appDelegate:AppDelegate = (UIApplication.shared.delegate as? AppDelegate)!
+        appDelegate.window?.rootViewController = tabBarController;
+        
+//                        let category = self.storyboard?.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
+//                        self.navigationController?.pushViewController(category, animated: true)
     }
 }

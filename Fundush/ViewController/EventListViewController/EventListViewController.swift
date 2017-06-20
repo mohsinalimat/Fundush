@@ -27,7 +27,7 @@ class EventListViewController: UIViewController,UITableViewDelegate,UITableViewD
         addBackButtonInNavigationBar()
 //        addSearchButtonInNavigationBar()
         addLocationButtonInNavigationBar()
-        self.title = "Event List"
+        //self.title = "Event List"
         // Do any additional setup after loading the view.
     }
 
